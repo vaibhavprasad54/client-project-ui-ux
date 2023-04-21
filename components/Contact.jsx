@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import Lottie from "react-lottie";
-import * as animationData from "../public/assets/astronaut";
-import { FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa";
+import * as animationData from "../public/assets/uiux2";
+import { FaBehance, FaLinkedinIn } from "react-icons/fa";
 import { AiFillCheckCircle, AiFillCloseCircle, AiFillInstagram, AiOutlineInstagram, AiOutlineMail } from "react-icons/ai";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import emailjs from '@emailjs/browser';
@@ -22,7 +22,7 @@ const Contact = () => {
         setFormErrors(validate(formValues));
         setIsSubmit(true);
     
-        emailjs.sendForm('service_hsbj53n', 'template_evospdq', form.current, 'aI2glAk1hjubO7zKc')
+        emailjs.sendForm('service_b12lo7g', 'template_k4ox9ld', form.current, '9CHeo5uYLDCFYxewH')
           .then((result) => {
               console.log(result.text);
           }, (error) => {
@@ -90,34 +90,29 @@ const Contact = () => {
 
         <div class="container mx-auto pt-5">
           <div class="lg:flex">
-            <div class="xl:w-2/5 lg:w-2/5 bg-blue-400 py-5 sm:py-14 xl:rounded-bl rounded-tl rounded-tr xl:rounded-tr-none p-2">
-              <div className="flex items-center justify-center sm:w-72 sm:ml-20">
+            <div class="xl:w-2/5 lg:w-2/5 bg-[#af98ef] py-5 sm:py-10 xl:rounded-bl rounded-tl rounded-tr xl:rounded-tr-none p-2">
+              <div className="flex items-center justify-center w-60 ml-10 mb-2 sm:mb-16 sm:w-72 sm:ml-20">
                <Lottie options={defaultOptions} />
               </div>
 
               <div className="text-center px-10">
-                <p className="font-semibold text-lg sm:text-xl text-white">Connect with me if you're searching for someone to build robust, fast and modern websites and web-apps!</p>
+                <p className="font-semibold text-lg sm:text-xl text-white">Connect with me if you're searching for someone to build researched, fast and user-friendly websites and web-app designs!</p>
               </div>
 
-              <div className="flex items-center justify-center my-4 sm:my-0 space-x-5 w-full sm:h-40 sm:items-end">
-                        <Link href="https://www.linkedin.com/in/vaibhav-prasad-495451166/">
+              <div className="flex items-center justify-center my-4 sm:mt-6 sm:my-0 space-x-5 w-full sm:h-40 sm:items-end">
+                        <Link href="https://www.linkedin.com/in/tarushi-srivastava-842699141">
                           <div className="rounded-full bg-gray-100 p-2 sm:p-3 mt-2 cursor-pointer hover:text-blue-800 hover:scale-105 ease-in duration-200">
                               <FaLinkedinIn className="text-base" />
                           </div>
                         </Link>
-                        <Link href="https://twitter.com/webdev_07">
-                          <div className="rounded-full bg-gray-100 p-2 sm:p-3 mt-2 cursor-pointer hover:text-blue-500 hover:scale-105 ease-in duration-200">
-                              <FaTwitter className="text-base" />
+                        <Link href="https://instagram.com/_tarushi05_?igshid=Mzc1MmZhNjY">
+                          <div className="rounded-full bg-gray-100 p-2 sm:p-[9px] mt-2 cursor-pointer hover:text-pink-600 hover:scale-105 ease-in duration-200">
+                              <AiOutlineInstagram className="text-base sm:h-5 sm:w-5" />
                           </div>
                         </Link>
-                        <Link href="https://www.instagram.com/vaybhav77/">
-                          <div className="rounded-full bg-gray-100 p-3 mt-2 cursor-pointer hover:text-pink-600 hover:scale-105 ease-in duration-200">
-                              <AiOutlineInstagram className="text-base" />
-                          </div>
-                        </Link>
-                        <Link href="https://github.com/vaibhavprasad54">
-                          <div className="rounded-full bg-gray-100 p-2 sm:p-3 mt-2 cursor-pointer hover:text-black hover:scale-105 ease-in duration-200">
-                              <FaGithub className="text-base" />
+                        <Link href="https://www.behance.net/tarushisrivast2">
+                          <div className="rounded-full bg-gray-100 p-2 sm:p-3 mt-2 cursor-pointer hover:text-blue-600 hover:scale-105 ease-in duration-200">
+                              <FaBehance className="text-base" />
                           </div>
                         </Link>
                     </div>
@@ -200,7 +195,7 @@ const Contact = () => {
                       aria-label="enter your message input"
                     ></textarea>
                   </div>
-                  <button type="submit" className="w-full px-7 py-2 mt-10 mb-5 rounded-md shadow-none bg-blue-600 hover:bg-blue-700">
+                  <button type="submit" className="w-full px-7 py-2 mt-10 mb-5 rounded-md shadow-none bg-[#af98ef] hover:bg-[#8c78c5]">
                     Send
                   </button>
                 </div>

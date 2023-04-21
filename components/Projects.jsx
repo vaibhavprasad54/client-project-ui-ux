@@ -1,9 +1,11 @@
 import Image from "next/image";
 import React from "react";
 import Link from "next/link";
-import notesy from "../public/assets/notesy2.png"
-import nextbuy from "../public/assets/nextbuy.png"
-import bingeme from "../public/assets/bingeme.png"
+import isopure from "../public/assets/one.png"
+import movie from "../public/assets/two.png"
+import rent from "../public/assets/three.png"
+import humane from "../public/assets/four.png"
+import nektar from "../public/assets/five.png"
 import ProjectItem from "./ProjectItem";
 
 const Projects = () => {
@@ -13,9 +15,11 @@ const Projects = () => {
         <h2 className="py-4">Projects</h2>
         <div className="grid md:grid-cols-2 gap-8 py-2">
           
-          <ProjectItem title='Notesy' desc='Full stack ( MERN )' backgroundImg={notesy} projectUrl="https://viridian-woodpecker-boot.cyclic.app/login" />
-          <ProjectItem title='NextBuy' desc='NextJs, Tailwind, Firebase, Stripe' backgroundImg={nextbuy} projectUrl="https://next-buy.vercel.app/" />
-          <ProjectItem title='BingeMe' desc='NextJs, TMDB API, Tailwind' backgroundImg={bingeme} projectUrl="https://binge-me.vercel.app/" />
+          <ProjectItem title='Isopure Homepage Design' desc='Figma, Photoshop' backgroundImg={isopure} projectUrl="https://www.behance.net/gallery/168794093/Isopure-Homepage-Redesign" />
+          <ProjectItem title='Movie Ticket Booking Design' desc='Figma, Miro, Photoshop' backgroundImg={movie} projectUrl="https://www.behance.net/gallery/166240055/Movie-Booking-Mobile-app-Case-Study" />
+          <ProjectItem title='Rent Home Web-app Design' desc='AdobeXD, Miro, Photoshop' backgroundImg={rent} projectUrl="https://www.behance.net/gallery/167330761/Rent-Homes-UIUX-Case-Study" />
+          <ProjectItem title='Humane Moodboard' desc='' backgroundImg={humane} projectUrl="https://www.behance.net/gallery/165849065/Humane-Wellness-Brandbook" />
+          <ProjectItem title='Nektar Moodboard' desc='' backgroundImg={nektar} projectUrl="https://www.behance.net/gallery/165851701/Nektar-Outdoor-Clothing-Brandbook" />
 
         </div>
       </div>

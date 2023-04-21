@@ -1,9 +1,9 @@
 import Image from "next/image"
 import Link from "next/link"
-import { AiOutlineMenu, AiOutlineClose, AiOutlineMail, AiOutlineTwitter } from "react-icons/ai" 
-import { FaGithub, FaLinkedinIn } from "react-icons/fa" 
+import { AiOutlineMenu, AiOutlineClose, AiOutlineMail, AiOutlineTwitter, AiOutlineInstagram } from "react-icons/ai" 
+import { FaBehance, FaGithub, FaLinkedinIn } from "react-icons/fa" 
 import { BsFillPersonLinesFill } from "react-icons/bs" 
-import  logo from "../public/assets/logo.svg"
+import  logo from "../public/assets/logoTarushi.png"
 import { useEffect, useState } from "react"
 
 
@@ -32,7 +32,7 @@ const Navbar = () => {
     <div className={shadow ? 'fixed w-full h-20 shadow-xl bg-slate-100 z-50' : 'fixed w-full h-20 bg-slate-100 z-50'}>
         <div className="flex justify-between items-center w-full h-full px-8 2xl:px-16">
             <Link href="/">
-                <Image src={logo} alt="" width={180} height={50} className="w-36 sm:w-40 cursor-pointer" />
+                <Image src={logo} alt="" width={200} height={20} className="w-28 sm:w-32 cursor-pointer" />
             </Link>
             <div>
             <ul className="hidden md:flex">
@@ -57,7 +57,7 @@ const Navbar = () => {
 
         
         <div className={nav ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/70": ""}>            {/* Overlay shadow on hamburger click */}
-            <div className={nav ? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease duration-500": "fixed left-[-100%] top-0 p-10 ease duration-500"}>
+            <div className={nav ? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#F1F5F9] p-10 ease duration-500": "fixed left-[-100%] top-0 p-10 ease duration-500"}>
                 <div>
                 <div className="flex w-full items-center justify-between">
                     <Image src={logo} alt="" width={140} height={20}  />
@@ -80,26 +80,22 @@ const Navbar = () => {
                 <div className="pt-40">
                     <p className="uppercase tracking-widest text-blue-900"> Let's Connect </p>
                     <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
-                        <Link href="https://www.linkedin.com/in/vaibhav-prasad-495451166/">
+                        <Link href="https://www.linkedin.com/in/tarushi-srivastava-842699141">
                         <div className="rounded-lg shadow-lg shadow-gray-400 p-3 mt-2 cursor-pointer hover:scale-105 ease-in duration-200">
                             <FaLinkedinIn />
                         </div>
                         </Link>
-                        <Link href="https://github.com/vaibhavprasad54">
+                        <Link href="https://instagram.com/_tarushi05_?igshid=Mzc1MmZhNjY">
                         <div className="rounded-lg shadow-lg shadow-gray-400 p-3 mt-2 cursor-pointer hover:scale-105 ease-in duration-200">
-                            <FaGithub />
+                            <AiOutlineInstagram />
                         </div>
                         </Link>
-                        <Link href="mailto:vaibhavprasad2700@gmail.com">
+                        <Link href="https://www.behance.net/tarushisrivast2">
                         <div className="rounded-lg shadow-lg shadow-gray-400 p-3 mt-2 cursor-pointer hover:scale-105 ease-in duration-200">
-                            <AiOutlineMail />
+                            <FaBehance />
                         </div>
                         </Link>
-                        <Link href="https://twitter.com/webdev_07">
-                        <div className="rounded-lg shadow-lg shadow-gray-400 p-3 mt-2 cursor-pointer hover:scale-105 ease-in duration-200">
-                            <AiOutlineTwitter />
-                        </div>
-                        </Link>
+                        
                     </div>
                 </div>
 
