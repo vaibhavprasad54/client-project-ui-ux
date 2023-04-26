@@ -12,7 +12,7 @@ const ProjectItem = ({ title, desc, backgroundImg, projectUrl }) => {
                 <h3 className="text-base sm:text-2xl text-black tracking-wider text-center">{title}</h3>
                 <p className="pb-2 pt-1 sm:pb-4 sm:pt-2 text-black text-center text-xs sm:text-xl">{desc}</p>
                 <Link href={projectUrl}>
-                    <p className="text-center py-2 px-1 sm:py-3 rounded-md bg-white text-gray-700 font-bold text-sm sm:text-lg cursor-pointer hover:bg-[#755eb6] hover:text-white">Live Demo</p>
+                    <p className="text-center py-2 px-1 sm:py-3 rounded-md bg-white text-gray-700 font-bold text-sm sm:text-lg cursor-pointer hover:bg-[#755eb6] hover:text-white">Read more</p>
                 </Link>
             </div>
           </div>
