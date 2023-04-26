@@ -96,7 +96,7 @@ const Contact = () => {
               </div>
 
               <div className="text-center px-10">
-                <p className="font-semibold text-lg sm:text-xl text-white">Connect with me if you're searching for someone to build researched, fast and user-friendly websites and web-app designs!</p>
+                <p className="font-semibold text-lg sm:text-xl text-white">Connect with me if you're searching for someone to build researched, fast and user-friendly websites and mobile-app designs!</p>
               </div>
 
               <div className="flex items-center justify-center my-4 sm:mt-6 sm:my-0 space-x-5 w-full sm:h-40 sm:items-end">
